@@ -1,7 +1,13 @@
 
 ]
-java:S1220""Move this file to a named package.8—¹æ1J$30d53bd4-daa3-4017-9857-f78e44e47e70
-ƒ	java:S125"<This block of commented-out lines of code should be removed.(Ü¾Áúÿÿÿÿ8 ¹æ1J$6654e32f-c24d-498f-b058-c44725bf21ef
-m	java:S106
-"+Replace this use of System.out by a logger.(ßãÈŒ8¢¹æ1J$8289f1a0-4698-47dd-a412-3fabaafd57d3
-m	java:S106"+Replace this use of System.out by a logger.(İ÷ˆÎ8Àâ¹æ1J$4d697dbc-9340-4bdc-9b8f-95dc9dd81184
+java:S1220""Move this file to a named package.8—¹æ1J$823eb944-4af2-4249-b4de-00b0e4720e51
+]	java:S125"<This block of commented-out lines of code should be removed.(Ü¾Áúÿÿÿÿ8è¼æ1
+L	java:S106"+Replace this use of System.out by a logger.(šì¡Ñûÿÿÿÿ8Ÿè¼æ1
+F	java:S106"+Replace this use of System.out by a logger.(÷à©/8 è¼æ1
+G	java:S106"+Replace this use of System.out by a logger.(«ğ¼‡8 è¼æ1
+F	java:S106"+Replace this use of System.out by a logger.(ù¯"8¡è¼æ1
+L	java:S106"+Replace this use of System.out by a logger.(’î›µşÿÿÿÿ8¡è¼æ1
+G	java:S106%"+Replace this use of System.out by a logger.(¼¡¨ò8¢è¼æ1
+G	java:S106&"+Replace this use of System.out by a logger.(¥§…ç8¢è¼æ1
+G	java:S106+"+Replace this use of System.out by a logger.(¼¡¨ò8£è¼æ1
+G	java:S106,"+Replace this use of System.out by a logger.(Î­šñ8£è¼æ1
