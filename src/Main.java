@@ -24,16 +24,16 @@ public class Main {
 
         //Inicializar un objeto con el ancho y alto predeterminados
         Rectangle rectangle = new Rectangle();
-        System.out.println("Ancho predeterminado: "+rectangle.getWidth() + ", Altura predeterminada: " + rectangle.getHeight());
+        System.out.println("Ancho predeterminado: " + rectangle.getWidth() + ", Altura predeterminada: " + rectangle.getHeight());
         //endregion
 
         //region PUNTO 2
         // Inicialice un empleado Carlos Gutiérrez, con dni 23456345 y salario inicial de
         //25000.
-        Employee employee = new Employee("Carlos","Gutierrez","23456345",25000.0);
+        Employee employee = new Employee("Carlos", "Gutierrez", "23456345", 25000.0);
         //Inicialice un empleado Ana Sánchez, con dni 34234123 y salario inicial de
         //27500.
-        Employee employee2 = new Employee("Ana","Sanchez","34234123",27500.0);
+        Employee employee2 = new Employee("Ana", "Sanchez", "34234123", 27500.0);
 
         //c. Imprima ambos objetos por pantalla
         System.out.println(employee);
@@ -48,18 +48,19 @@ public class Main {
         //endregion
 
         //region PUNTO 3
-        Sell sell = new Sell(1L,"venta alfajores",5,1600.0);
+        Sell sell = new Sell(1L, "venta alfajores", 5, 1600.0);
         System.out.println(sell);
         System.out.println("venta total: " + sell.getTotal());
         //endregion
 
         //region PUNTO 4
-        BankAccount bankAccount = new BankAccount(1L,"Juan",56123.0);
-        System.out.println("salgo despues de acreditar 5000: " + bankAccount.credit(5000.0));
+        BankAccount bankAccount = new BankAccount(1L, "Juan", 15000.0);
+        System.out.println("saldo despues de acreditar 5000: " + bankAccount.credit(2500.0));
+        System.out.println("retitando saldo correcto: " + bankAccount.debit(1500.0));
+        System.out.println("Intentando retirar mas de lo que tiene la cuenta: " + bankAccount.debit(30000.0));
+        System.out.println(bankAccount.getBalance());
 
-        System.out.println("Intentando retirar mas de lo que tiene la cuenta: " + bankAccount.debit(6054500.0));
 
-        System.out.println("retitando saldo correcto: " + bankAccount.debit(3000.5));
         //endregion
     }
 }
