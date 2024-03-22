@@ -16,3 +16,5 @@ D
 src/models/Sell.java,d\c\dc15bd74959cc1b7fc387a81466851c38f9db346
 K
 src/models/BankAccount.java,3\c\3ccd5425b9a391fbac5463407d26a2cdc0236f00
+D
+src/models/Hour.java,b\3\b3892e223bf978bd3b8e7bdcbfd5079bb14a609d

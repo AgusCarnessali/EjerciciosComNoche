@@ -1,5 +1,6 @@
 import models.BankAccount;
 import models.Employee;
+import models.Hour;
 import models.Rectangle;
 import models.Sell;
 
@@ -61,6 +62,12 @@ public class Main {
         System.out.println(bankAccount.getBalance());
 
 
+        //endregion
+        //region PUNTO 5
+        Hour hour = new Hour(19,5,59);
+        System.out.println(hour);
+        System.out.println(hour.advanceOneSecond());
+        System.out.println(hour.retreatOneSecond());
         //endregion
     }
 }
