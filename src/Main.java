@@ -1,3 +1,4 @@
+import models.BankAccount;
 import models.Employee;
 import models.Rectangle;
 import models.Sell;
@@ -50,6 +51,15 @@ public class Main {
         Sell sell = new Sell(1L,"venta alfajores",5,1600.0);
         System.out.println(sell);
         System.out.println("venta total: " + sell.getTotal());
+        //endregion
+
+        //region PUNTO 4
+        BankAccount bankAccount = new BankAccount(1L,"Juan",56123.0);
+        System.out.println("salgo despues de acreditar 5000: " + bankAccount.credit(5000.0));
+
+        System.out.println("Intentando retirar mas de lo que tiene la cuenta: " + bankAccount.debit(6054500.0));
+
+        System.out.println("retitando saldo correcto: " + bankAccount.debit(3000.5));
         //endregion
     }
 }
