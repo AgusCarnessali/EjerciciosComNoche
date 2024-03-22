@@ -1,5 +1,6 @@
 import models.Employee;
 import models.Rectangle;
+import models.Sell;
 
 public class Main {
     public static void main(String[] args) {
@@ -43,6 +44,12 @@ public class Main {
         System.out.println(employee);
         System.out.println(employee.anualSalary());
 
+        //endregion
+
+        //region PUNTO 3
+        Sell sell = new Sell(1L,"venta alfajores",5,1600.0);
+        System.out.println(sell);
+        System.out.println("venta total: " + sell.getTotal());
         //endregion
     }
 }
