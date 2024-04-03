@@ -6,15 +6,23 @@ import java.util.List;
 
 public class MainGuia2 {
     public static void main(String[] args) {
-        Author author = new Author("Joshua","Block","joshua@gmail.com",'M');
-        Author author2 = new Author("John","Doe","john@gmail.com",'M');
+        Author author = new Author("Joshua", "Block", "joshua@gmail.com", 'M');
+        Author author2 = new Author("John", "Doe", "john@gmail.com", 'M');
         System.out.println(author);
 
-        Book book = new Book("Effective Java",450d,150,author,author2);
+        Author[] authors1 = new Author[2];
+        authors1[0] = new Author("Joshua", "Block", "joshua@gmail.com", 'M');
+        authors1[1] = new Author("Joshua", "Block", "joshua@gmail.com", 'M');
+
+        List<Author> authors2 = new ArrayList<>();
+        authors2.add(new Author("John", "Doe", "john@gmail.com", 'M'));
+        authors2.add(new Author("John", "Doe", "john@gmail.com", 'M'));
+
+        Book book = new Book("Effective Java", 450d, 150, author, author2, authors1, authors2);
         System.out.println(book);
 
         book.setPrice(500d);
-        book.setStock(book.getStock()+50);
+        book.setStock(book.getStock() + 50);
 
         System.out.println(book.getAuthor().getName());
         System.out.println(book.getAuthor().getSurname());
@@ -24,19 +32,19 @@ public class MainGuia2 {
         book.printMessage();
 
 
-        Client client = new Client("Juan","Juan@gmail.com",50d);
+        Client client = new Client("Juan", "Juan@gmail.com", 50d);
         System.out.println(client);
 
 
         ArrayList<ItemSell> items = new ArrayList<>();
-        ItemSell itemSell = new ItemSell(1l,"Bottle","big bottle",300d);
-        ItemSell itemSell2 = new ItemSell(2l,"Phone","iPhone",500d);
-        ItemSell itemSell3 = new ItemSell(3l,"Notebook","DELL notebook",4000d);
+        ItemSell itemSell = new ItemSell(1l, "Bottle", "big bottle", 300d);
+        ItemSell itemSell2 = new ItemSell(2l, "Phone", "iPhone", 500d);
+        ItemSell itemSell3 = new ItemSell(3l, "Notebook", "DELL notebook", 4000d);
         items.add(itemSell);
         items.add(itemSell2);
         items.add(itemSell3);
 
-        Invoice invoice = new Invoice(LocalDateTime.now(),client,items);
+        Invoice invoice = new Invoice(LocalDateTime.now(), client, items);
         System.out.println(invoice);
         System.out.println(invoice.getAmount());
         invoice.finalPrice();
